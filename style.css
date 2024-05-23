@@ -37,11 +37,6 @@ nav {
 .nav-middle a:hover {
   color: #000;
 }
-
-.nav-right {
-  /* display: flex; */
-}
-
 .nav-right > * {
   display: inline-block;
   margin-right: 0.5em;
@@ -51,7 +46,7 @@ nav {
 
 section {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
   margin-top: 3em;
@@ -62,14 +57,48 @@ section {
 }
 
 .main-left img {
-  border: 1px solid #807f7f;
   width: 462px;
-  height: 400px;
+}
+
+.small-img {
+  display: flex;
 }
 
 .small-img img {
-  height: 50px;
-  width: 60px;
+  width: 60%;
+  height: 80%;
+}
+
+.img-item {
+  margin: 0.3rem;
+}
+
+.img-item:nth-child(1),
+.img-item:nth-child(2),
+.img-item:nth-child(3) {
+  margin-right: 0;
+}
+.img-item:hover {
+  opacity: 0.8;
+}
+
+.main-left img {
+  width: 100%;
+  display: block;
+}
+
+.image-display {
+  overflow: hidden;
+}
+
+.img-showcase {
+  display: flex;
+  width: 100%;
+  transition: all 0.5s ease;
+}
+
+.img-showcase img {
+  min-width: 100%;
 }
 
 .main-right {
