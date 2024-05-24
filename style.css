@@ -37,6 +37,11 @@ nav {
 .nav-middle a:hover {
   color: #000;
 }
+
+.nav-right {
+  cursor: pointer;
+}
+
 .nav-right > * {
   display: inline-block;
   margin-right: 0.5em;

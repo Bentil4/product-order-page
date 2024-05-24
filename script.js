@@ -2,6 +2,8 @@ const imgs = document.querySelectorAll('.small-img a');
 const imgBtns = [...imgs];
 let imgId = 1;
 
+console.log(imgs.length);
+
 imgBtns.forEach((imgItem) => {
   imgItem.addEventListener('click', (event) => {
     event.preventDefault();
